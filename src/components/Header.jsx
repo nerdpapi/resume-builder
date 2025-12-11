@@ -6,7 +6,6 @@ export default function Header() {
     <AppBar sx={{ mb: 3 }}>
       <Toolbar>
         <Typography sx={{ flexGrow: 1 }}>
-          <Typography sx={{ flexGrow: 1 }}>
         <Box
     component={RouterLink}
     to="/"
