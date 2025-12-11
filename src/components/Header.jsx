@@ -5,8 +5,27 @@ export default function Header() {
   return (
     <AppBar sx={{ mb: 3 }}>
       <Toolbar>
-        <Typography variant="h6" sx={{ flexGrow: 1 }}>
-          Resume Builder
+        <Typography sx={{ flexGrow: 1 }}>
+          <Typography sx={{ flexGrow: 1 }}>
+        <Box
+    component={RouterLink}
+    to="/"
+    sx={{
+      display: "flex",
+      alignItems: "center",
+      textDecoration: "none",
+    }}
+  >
+    <Box
+      component="img"
+      src="/logo.png"
+      alt="Resume Builder Logo"
+      sx={{
+        height: 36,
+        mr: 1,
+      }}
+    />
+  </Box>
         </Typography>
 
         <Box sx={{ display: "flex", gap: 2 }}>
